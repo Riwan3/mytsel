@@ -60,7 +60,7 @@ class LoginView extends GetView<LoginController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Checkbox(value: false, onChanged: ((value) {})),
+                    Checkbox(value: true, onChanged: ((value) {})),
                     Text.rich(
                       TextSpan(
                         children: [
