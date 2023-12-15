@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:mytsel/app/modules/Verification/views/verification_view.dart';
 import 'package:mytsel/app/modules/home/views/splashScreen.dart';
 
 import 'app/routes/app_pages.dart';
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
             title: "Application",
             initialRoute: Routes.LOGIN,
             getPages: AppPages.routes,
+            routes: {
+              '/Verification': (p0) => VerificationView(),
+            },
           );
         }
       },

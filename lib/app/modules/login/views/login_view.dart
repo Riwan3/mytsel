@@ -85,18 +85,23 @@ class LoginView extends GetView<LoginController> {
               SizedBox(
                 height: 42,
               ),
-              Container(
-                padding: EdgeInsets.only(top: 10),
-                height: 42,
-                width: double.infinity,
-                color: Colors.red,
-                child: Text(
-                  'Lanjut',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14.0,
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Verification');
+                },
+                child: Container(
+                  padding: EdgeInsets.only(top: 10),
+                  height: 42,
+                  width: double.infinity,
+                  color: Colors.red,
+                  child: Text(
+                    'Lanjut',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14.0,
+                    ),
                   ),
                 ),
               ),
