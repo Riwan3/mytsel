@@ -64,6 +64,9 @@ class VerificationView extends GetView<VerificationController> {
                     border: Border.all(),
                   ),
                   child: TextField(
+                    onSubmitted: (value) {
+                      Navigator.pushNamed(context, 'home');
+                    },
                     decoration: InputDecoration.collapsed(
                         hintText: 'Cth. q5TsgH***',
                         hintStyle: TextStyle(
